@@ -1,0 +1,130 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+
+* {
+    font-family: '{{fontName}}', sans-serif;
+    color: {{fontColor}};
+    overflow: hidden;
+    font-weight: {{fontWeight}};
+    /*text-shadow:{textShadow};*/
+}
+
+.main-container{
+    display:{{alignMessages}};
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    height:98%;
+    margin-bottom:10px;
+    box-sizing: border-box;
+    background-color: {{backgroundColor}};
+    border-radius: 5%;
+}
+
+.message-row{
+    flex: 0 0 auto;
+    width:100%;
+    margin-bottom: 5px;
+    /*background-color:{{backgroundColor}};*/
+    padding:5px;
+    vertical-align: baseline;
+}
+
+.message-container {
+    display: grid;
+    grid-template-rows: 30px auto;
+    grid-template-columns: 30px auto;
+    column-gap: 7px;
+    margin: 0 5%;
+    max-width: 90%;
+}
+
+.badge{
+    display:{{displayBadges}};
+    height:{{fontSize}}px;
+}
+
+.user-box{
+    display:inline;
+    font-size:{{fontSize}}px;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.user-box > span{
+    font-size:{{fontSize}}px;
+}
+
+.user-message-container {
+    display: inline-flex;
+    grid-row: 2;
+    grid-column: 2;
+    padding: 5px;
+}
+
+.user-message-arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-top: 15px solid #556389;
+    overflow: visible;
+}
+
+.arrow-circle {
+    position: relative;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    top: -15px;
+    left: -17px;
+    border: 3px solid #556389;
+    border-radius: 100%;
+}
+
+.user-message-inner-arrow {
+    position: relative;
+    width: 0;
+    height: 0;
+    top: -16px;
+    left: -16px;
+    z-index: 1;
+    border-left: 18px solid transparent;
+    border-top: 16px solid #556389;
+}
+
+.user-message-inner-arrow-2 {
+    position: relative;
+    width: 0;
+    height: 0;
+    top: -36px;
+    left: -15px;
+    z-index: 1;
+    border-left: 9px solid transparent;
+    border-top: 13px solid #556389;
+}
+
+.user-message{
+    display:inline;
+    font-size:{{fontSize}}px;
+    word-wrap: break-word;
+    background-color: #556389;
+    border-radius: 0 20px 20px 20px;
+    padding: 10px 5px 10px 15px;
+}
+
+.message-icon {
+    background-color: red;
+    grid-row: 1 / span 2;
+    grid-column: 1;
+}
+
+.emote{
+    height: {emoteSize}px;
+    vertical-align: middle;
+    background-repeat:no-repeat;
+}
+
+.action{
+    font-style: italic;
+}
