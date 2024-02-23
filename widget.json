@@ -210,7 +210,7 @@
   },
   "widgetAuthor": {
     "type": "hidden",
-    "value": "lx"
+    "value": "saoras01"
   },
   "widgetVersion": {
     "type": "hidden",
@@ -218,7 +218,7 @@
   },
   "widgetUpdateUrl": {
     "type": "hidden",
-    "value": "https://github.com/StreamElements/widgets/blob/master/CustomChat/"
+    "value": "https://github.com/saoras01/CustomChat"
   }
 
 }
