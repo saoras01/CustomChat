@@ -218,7 +218,7 @@
   },
   "widgetUpdateUrl": {
     "type": "hidden",
-    "value": "https://github.com/saoras01/CustomChat"
+    "value": "https://github.com/saoras01/CustomChat/"
   }
 
 }

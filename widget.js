@@ -204,18 +204,41 @@ function addMessage(username, badges, message, isAction, uid, msgId) {
     <div data-sender="${uid}" data-msgid="${msgId}" class="message-row {animationIn} animated" id="msg-${totalMessages}">
         <div class="message-container">
         
-            <div class="message-icon"></div>
+            <!-- Left side icon -->
+            <div class="message-icon" style="background-image: url('https://github.com/saoras01/CustomChat/blob/main/img/chat_star2.png');">
+             
+            </div>
         
+            <!-- User nick and badges -->
             <div class="user-box ${actionClass}"> ${badges}${username} </div>
             
             <div class="user-message-container">
             
+                <!-- Arrow svg -->
                 <div class="user-message-arrow">
-                    <div class="arrow-circle"></div>
-                    <div class="user-message-inner-arrow"></div>
-                    <div class="user-message-inner-arrow-2"></div>
+                    <svg
+                       width="4.233345mm"
+                       height="5.291667mm"
+                       viewBox="0 0 4.233345 5.291667"
+                       version="1.1"
+                       id="svg1"
+                       xmlns="http://www.w3.org/2000/svg"
+                       xmlns:svg="http://www.w3.org/2000/svg">
+                      <defs
+                         id="defs1" />
+                      <g
+                         id="layer1"
+                         transform="translate(-0.04434605)">
+                        <path
+                           style="fill:#556389;fill-opacity:1;stroke:#556389;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;paint-order:stroke fill markers"
+                           d="m 17.660672,1.2930289 h -2.072277 a 0.75982589,0.75982589 111.51617 0 0 -0.518513,1.3152348 l 2.602553,2.4296682 z"
+                           id="path5"
+                           transform="matrix(1.4877876,0,0,1.4130314,-22.015139,-1.8270898)" />
+                      </g>
+                    </svg>
                 </div>
                 
+                <!-- Message -->
                 <div class="user-message ${actionClass}"> ${message} </div>
             
             </div>

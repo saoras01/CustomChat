@@ -18,7 +18,7 @@
     height:98%;
     margin-bottom:10px;
     box-sizing: border-box;
-    background-color: red;
+    background-color: {{backgroundColor}};
     border-radius: 5%;
 }
 
@@ -46,10 +46,12 @@
 }
 
 .user-box{
-    display:inline;
+    display: inline-flex;
     font-size:{{fontSize}}px;
     grid-row: 1;
     grid-column: 2;
+    align-items: center;
+    padding-left: 10px;
 }
 
 .user-box > span{
@@ -57,64 +59,36 @@
 }
 
 .user-message-container {
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: auto;
+    column-gap: 0;
     grid-row: 2;
     grid-column: 2;
-    padding: 5px;
 }
 
 .user-message-arrow {
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-top: 15px solid #556389;
+    position: relative;
+    width: auto;
+    height: 40px;
     overflow: visible;
+    left: 1px;
+    grid-column: 1;
+    grid-row: 1;
 }
-
-.arrow-circle {
-    position: relative;
-    width: 0;
-    height: 0;
-    z-index: 1;
-    top: -15px;
-    left: -17px;
-    border: 3px solid #556389;
-    border-radius: 100%;
-}
-
-.user-message-inner-arrow {
-    position: relative;
-    width: 0;
-    height: 0;
-    top: -16px;
-    left: -16px;
-    z-index: 1;
-    border-left: 18px solid transparent;
-    border-top: 16px solid #556389;
-}
-
-.user-message-inner-arrow-2 {
-    position: relative;
-    width: 0;
-    height: 0;
-    top: -36px;
-    left: -15px;
-    z-index: 1;
-    border-left: 9px solid transparent;
-    border-top: 13px solid #556389;
-}
-
 .user-message{
     display:inline;
     font-size:{{fontSize}}px;
     word-wrap: break-word;
     background-color: #556389;
     border-radius: 0 20px 20px 20px;
-    padding: 10px 5px 10px 15px;
+    padding: 10px 7px 10px 15px;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .message-icon {
-    background-color: red;
+    background-image: url('https://github.com/saoras01/CustomChat/blob/main/img/chat_star2.png');
     grid-row: 1 / span 2;
     grid-column: 1;
 }
